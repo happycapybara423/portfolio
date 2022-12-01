@@ -1,0 +1,79 @@
+h1, h2, h3, h4 {
+    color:#303030;
+}
+
+h1 {
+    font-family: 'Space Grotesk', serif;
+    font-weight: 400;
+    font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: "DM Sans";
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Space Grotesk', serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+p, a {
+    font-family: "DM Sans", sans-serif;
+}
+
+body { 
+    margin: 0;   /* Remove body margins */
+}
+
+.content {
+    padding: 5rem 10rem 2rem 10rem;
+}
+
+b {
+    font-weight: bold;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+.selected-work {
+    padding-top: 3rem;
+}
+
+.portfolio-grid {
+    display: flexbox;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    padding: 2rem 10rem 0rem 10rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #303030;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color:rgb(77,142,248);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: rgb(48, 48, 48);
+    text-decoration: underline;
+}
