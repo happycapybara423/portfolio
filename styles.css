@@ -5,24 +5,40 @@ h1, h2, h3, h4 {
 h1 {
     font-family: 'Space Grotesk', serif;
     font-weight: 400;
-    font-size: 4.5rem;
+    font-size: 3.6rem;
     margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-family: 'Space Grotesk', serif;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 h3 {
     font-family: "DM Sans";
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
-h2 {
+h4 {
     font-family: 'Space Grotesk', serif;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 p, a {
     font-family: "DM Sans", sans-serif;
+    font-size: 1.1rem;
+    margin: 5px 0px;
+    color: #606367;
+}
+
+p2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    margin: 5px 0px;
+    color: #606367;
 }
 
 body { 
@@ -44,14 +60,15 @@ img {
 
 
 .selected-work {
-    padding-top: 3rem;
+    padding: 3rem 0;
 }
 
-.portfolio-grid {
-    display: flexbox;
+.tagline {
+    max-width: 90%;
 }
-
-
+.subtag {
+    max-width: 70%;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
@@ -76,4 +93,36 @@ img {
 .topnav a.active {
     color: rgb(48, 48, 48);
     text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    width: calc(50% - 1rem);
+    padding-bottom: 3rem;
+}
+
+.card-image {
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.card-image:hover {
+    cursor: pointer;
+    transform: rotate(2deg);
+    
+}
+
+.card-desc {
+    padding-top: 10px;
 }
