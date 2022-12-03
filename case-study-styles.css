@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Recoleta';
+    src: url(fonts/recoleta-regulardemo.otf);
+}
+
 body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Space Grotesk", serif;
+    font-family: "Recoleta";
     margin: 0px;
 }
 

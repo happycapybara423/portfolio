@@ -1,16 +1,21 @@
+@font-face {
+    font-family: 'Recoleta';
+    src: url(fonts/recoleta-regulardemo.otf);
+}
+
 h1, h2, h3, h4 {
     color:#303030;
 }
 
 h1 {
-    font-family: 'Space Grotesk', serif;
+    font-family: 'Recoleta', serif;
     font-weight: 400;
     font-size: 3.6rem;
     margin-bottom: 0.5rem;
 }
 
 h2 {
-    font-family: 'Space Grotesk', serif;
+    font-family: 'Recoleta', serif;
     font-weight: 400;
     font-size: 2rem;
 }
@@ -19,19 +24,27 @@ h3 {
     font-family: "DM Sans";
     font-weight: 300;
     font-size: 1.6rem;
+    line-height: 2.5rem;
 }
 
 h4 {
-    font-family: 'Space Grotesk', serif;
+    font-family: 'Recoleta', serif;
     font-weight: 500;
     font-size: 2rem;
 }
 
-p, a {
+p {
     font-family: "DM Sans", sans-serif;
     font-size: 1.1rem;
     margin: 5px 0px;
     color: #606367;
+}
+
+a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1rem;
+    margin: 5px 0px;
+    color: #303030;
 }
 
 p2 {
@@ -60,11 +73,11 @@ img {
 
 
 .selected-work {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 .tagline {
-    max-width: 90%;
+    max-width: 80%;
 }
 .subtag {
     max-width: 70%;
