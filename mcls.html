@@ -4,35 +4,67 @@
     <title>Responsive Redesign</title>
     <link rel="stylesheet" href="case-study-styles.css">
     <meta name="description" content="responsive redesign writeup">
-    <link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
     <body>
+        <div class="topnav">
+            <div>
+                <a style="color:#303030" href="index.html">Jeffrey Tao</a>
+            </div>
+            <div class="right-links">
+                <a href="index.html">Work</a>
+                <a href="about.html">About</a>  
+                <a href="resume.pdf">Résumé</a>
+            </div>
+                    
+        </div>
+
+        <div class="context">
+            <div class="title">
+                <h2 style="margin:0 0 1rem">Bringing Mercer County Library into the modern age.</h2>
+                <p>UX Design &nbsp;•&nbsp; Responsive Design &nbsp;•&nbsp; Web</p>
+            </div> 
+            <div class="details">
+                <div class="detail">
+                    <p><b>TIMELINE</b></p>
+                    <p>Oct 2022<br>
+                        2 weeks</p>
+                </div>
+                <div class="detail">
+                    <p><b>ROLE</b></p>
+                    <p>UI/UX Designer<br>
+                        Visual Designer
+                    </p>
+                </div>
+            </div>
+                
+        </div>
         
-        <img class="full-width" src="images/mcls/hero-banner.png" alt="responsive-redesign-hero">  
+
+        <img class="full-width" src="images/mcls/hero-banner2.png" alt="responsive-redesign-hero">  
         
-        <!-- Overview -->
+        <!-- Context -->
         <div class="content" id="overview">
-            <h2>Overview</h2>
-                <p>The goal of this project was to practice the workflow of redesigning a simple website. 
-                    It involved analyzing and identifying flaws in an existing interface, creating low-fidelity 
-                    and high-fidelity prototypes for various screen sizes, and building a responsive website based 
-                    on those prototypes.
-                </p>
-                <p>For this project, I decided to redesign the home page for  <a href="https://mcl.org/" style="color: #3DAF96;">Mercer County Library System</a>, 
-                    the local library I grew up with. Looking back on my childhood, my local library played an 
-                    integral role in my early education. I thought their website would be good to redesign because 
-                    a better interface could increase community engagement with the library, and I thought this 
-                    would be a good opportunity to give back to a place that shaped my formative years.
+            <h2>Context</h2>
+                <p>The main goal of this project was to redesign a website to accommodate all screen sizes from desktop,
+                     to tablet, to mobile. I chose to redesign the home page for <a href="https://mcl.org/">Mercer County Library System</a>, 
+                     the local library I grew up with. As news and media content shift away from print, it will 
+                     be increasingly important for libraries to establish a solid digital presence to stay 
+                     relevant in the modern age. My redesign of their website, which is outdated and hard to use,
+                      aims to bolster community engagement with the library and improve public access to the 
+                      library’s events, resources, and services.
                 </p>
         </div>
 
         <!-- Identifying Usability Problems -->
         <div class="content" id="part1">
-            <h2>Identifying Usability Problems</h2>
-                <p>Usability is a measure of how well a user can use a product or interface to accomplish a task 
-                    effectively, efficiently and satisfactorily. This can be broken down into three dimensions:
+            <h2>Research</h2>
+                <p2>IDENTIFYING USABILITY PROBLEMS</p2>
+                <p><br>I began my design process by identifying problems with the site’s usability, 
+                    which I broke down into three dimensions:
+
                 </p>
                 <ul class="list">
                     <li><b>Learnability</b> - Is it easy for new users to learn?</li>
@@ -43,70 +75,62 @@
                     quick walkthrough of the existing web page, jotting down any thoughts, concerns, or questions I
                     had as they arose.
                 </p>
-                <br>
-                   <img class="full-width" src="images/mcls/cognitive-walkthru.png" alt="cognitive-walkthrough-of-old-site">  
-                <p>At a glance, the webpage was cluttered and unpolished, and I found it 
-                    difficult to find and perform specific actions on the page. I then dove into a detailed analysis of 
-                    the website’s usability, keeping in mind the three dimensions as well as the conceptual models 
-                    that the interface uses and how they compare to the typical user’s mental models. I synthesized 
-                    my findings into a few key problems:
+                   <img style="padding:4rem 0rem" class="full-width" src="images/mcls/cognitive-walkthru.png" alt="cognitive-walkthrough-of-old-site">  
+                <p>At a glance, the webpage was cluttered and unpolished, and I found it difficult to find and perform 
+                    specific actions on the page. I then dove into a detailed analysis of the website’s usability, 
+                    keeping in mind the three dimensions as well as the conceptual models that the interface uses 
+                    and how they compare to the typical user’s mental models. I synthesized my findings into a few key problems:
                 </p>
-                   <div class="container" style="display: flex;">
+                <br>
+                <br>
+                
+                <div class="container" style="display: flex;">
                     <div style="width: 50%; padding: 0px 20px 0px 20px;">
-                        <p><b>Visual clutter and information overload</b></p>
-                        <ul>
-                            <li>Users may be overwhelmed by the large amount of information on the page, 
-                                particularly the Resources and Services sections which have many categories
-                            </li>
-                            <li>This can lead to decision paralysis and make it easier to get lost
-                            </li>
-                        </ul>
+                        <p><b>🗑️ &nbsp;Visual clutter & information overload</b></p>
+                        <p>Users may be overwhelmed by the large amount of information on the page, 
+                            particularly the Resources and Services sections which have many categories.
+                        </p>
                     </div>
                     <div style="width: 50%; padding: 0px 20px 0px 20px;">
-                        <p><b>Lack of contextual information</b></p>
-                        <ul>
-                            <li>The Resources, Services, and Catalog sections lay out all of the options available to 
-                                the user without providing any context as to what they are about or how to start using them
-                            </li>
-                            <li>This can be unwelcoming to new users and makes it harder to recall how to do a task
-                            </li>
-                        </ul>
+                        <p><b>ℹ️ &nbsp;Lack of contextual information</b></p>
+                        <p>The Resources, Services, and Catalog sections lay out all of the available options 
+                            without providing any context as to what they’re about or how to start using them.
+                        </p>
                     </div>
                 </div>
                 <div class="container" style="display: flex;">
                     <div style="width: 50%; padding: 0px 20px 30px 20px;">
-                        <p><b>Unorganized information architecture/content strategy</b></p>
-                        <ul>
-                            <li>The Resources, Services, and Catalog sections lay out all of the options available to 
-                                the user without providing any context as to what they are about or how to start using them
-                            </li>
-                            <li>This can be unwelcoming to new users and makes it harder to recall how to do a task
-                            </li>
-                        </ul>
+                        <p><b>🗂️ &nbsp;Unorganized IA / content strategy</b></p>
+                        <p>Irrelevant or auxiliary information gets more priority than it likely should. 
+                            The user’s mental model might not align with the current structure of content, 
+                            so they’re not finding the answers they want when they want.
+                        </p>
                     </div>
                     <div style="width: 50%; padding: 0px 20px 30px 20px;">
-                        <p><b>Navigational inefficiency</b></p>
-                        <ul>
-                            <li>Many of the typical tasks one would perform, such as searching the library catalog, 
-                                registering and looking for information about events, reserving and renewing books, and 
-                                applying for a library card are hard to find or complete quickly
-                            </li>
-                        </ul>
+                        <p><b>🧭 &nbsp;Navigational inefficiency</b></p>
+                        <p>Many of the typical tasks one would perform, such as searching the library catalog, 
+                            registering and looking for information about events, reserving and renewing books, 
+                            and applying for a library card are hard to find or complete quickly.
+                        </p>
                     </div>
                 </div>
                 
+                
                 <!-- Accessibility -->
                 <div>
-                    <h3>ACCESSIBILITY</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <p2>ACCESSIBILITY</p2><br><br>
+                
                     <p>After identifying usability problems, I also used WebAIM WAVE to detect issues 
                         with accessibility. These were the most significant issues it found:</p>
-                        <ul>
+                        <ul class="list">
                             <li> 
                                 <b>Many images have null or empty alternative text.</b> 
                                 I agree that this could be an issue, as alt text makes 
                                 it easier for those using a screen reader to navigate the site.
                             </li>
-                            <br>
                             <li> 
                                 <b>Many very low contrast errors.</b> 
                                 I would disagree here. From my own observations, I didn’t notice too many 
@@ -115,7 +139,6 @@
                                 did not compare the correct foreground and background colors, creating errors that 
                                 didn’t exist.
                             </li>
-                            <br>
                             <li> 
                                 <b>ARIA Hidden tags.</b> 
                                 Content with these tags were hidden with ARIA and not presented to screen reader users. 
@@ -123,7 +146,6 @@
                                 with screen readers might not be able to interact with or navigate to the library’s 
                                 social media channels. However, I don’t think this is a huge area of concern.
                             </li>
-                            <br>
                             <li> 
                                 <b>Redundant text titles and noscript elements.</b> 
                                 WAVE recommended either removing or modifying the title attribute to provide advisory, 
@@ -133,6 +155,9 @@
                                 issue either.
                             </li>
                         </ul>
+                        <p>Ultimately, WebAIM WAVE didn't reveal too many accessibility issues that I could address through
+                            my redesign of the interface, other than contrast errors.
+                        </p><br>
                 </div>
                 
         </div>
@@ -140,44 +165,169 @@
         <!-- Visual Redesign -->
         <div class="content" id="part2">
             <h2>Visual Redesign</h2>
-            <br>
-                <h3>LOW-FIDELITY WIREFRAMES</h3>
-                    <p>To address these issues, I started by brainstorming solutions and sketching out low-fidelity
-                        wireframes to let me ideate quickly and freely. 
+                <p2>LOW-FIDELITY WIREFRAMES</p2><br><br>
+                    <p>To address these issues, I started by brainstorming solutions and sketching out
+                        low-fidelity wireframes to let me ideate quickly and freely. I also wireframed the page 
+                        across a range of screen sizes to implement responsiveness in my design.
                     </p>
-                    <p><b>Highlights of my Redesign</b></p>
-                    <ul class="list">
-                        <li>Reduced redundancies and clutter</li>
-                        <li>Improved content strategy by putting most relevant and desired information at the top</li>
-                        <li>Made typical tasks and other actions easier to locate and accomplish</li>
-                        <li>Updated visual identity to be more modern and attractive</li>
-                    </ul>
-                    <img src="images/mcls/desktop-lofi.png" alt="desktop-lofi-wireframes-markup">
-                    <img src="images/mcls/tablet-mobile-lofi.png" alt="tablet-mobile-lofi-wireframes-markup">
+                    <img class="full-width" src="images/mcls/mcls-lofis.jpg" alt="lofi-wireframes">
 
-                <h3>VISUAL DESIGN STYLE GUIDE</h3>
+                
+        </div>
+            
+        <div class="content">
+            <br>
+            <p2>VISUAL DESIGN STYLE GUIDE</p2>
+            <br><br>
                     <p>I then created a visual design style guide that documents the main colors, typography, and reusable 
                         components’ different states in order to establish a consistent visual identity and facilitate 
-                        dev handoff.
+                        development.
                     </p>
                     <img src="images/mcls/style-guide.png" alt="visual-design-style-guide">
 
-                <h3>HIGH-FIDELITY PROTOTYPES</h3>
-                <p>Next, I translated my low-fidelity wireframes into high-fidelity prototypes in Figma using the colors, 
-                    typography, and components from my visual design style guide. I also annotated my prototypes to show 
-                    how my design would handle different screen sizes.
-                </p>
-                <img class="full-width" src="images/mcls/mcls-hifi.png" alt="high-fidelity-prototypes">
+            <h2>Final Designs</h2>
+            <p>I finally translated my low-fidelity wireframes into high-fiedlity prototypes in Figma using the colors,
+                typography, and components from my visual design style guide. Here are the main highlights of the final redesign:
+            </p>
+            
         </div>
+
+        <!-- hero -->
+        <div class="highlights" style="display: flex;">
+            <div style="padding: 0 0 0 10rem;">
+                <img  src="images/mcls/mcls-hero.png">
+            </div>
+            <div style="max-width: 30%; padding: 1rem 10rem 0rem 0rem;">
+                <p><b>🧭 &nbsp;Navigational inefficiency</b></p>
+                <p>I redesigned the hero and header to <b>make hard-to-find actions visible or more distinct</b>. I added a large search bar
+                    in the header for easy access since the old search CTA was not apparent. 'Log in,' 'Hours & Locations,' and 'Help'
+                    buttons are distinctly sectioned off at the top for greater visibility, and I added quick links so users can find and
+                    complete the most popular actions quickly. Furthermore, there is now a CTA for event registration 
+                    so users can register directly from the home page if they choose.
+                </p>
+            </div>
+        </div>
+
+        <!-- events -->
+        <div class="highlights" style="display: flex;">
+            <div style="max-width: 30%; padding: 2rem 4rem 0 10rem;">                
+                <p><b>🗂️ &nbsp;Unorganized IA / content strategy</b></p>
+                <p>In my redesign, I gave the events section <b>higher priority</b>, featuring them earlier on the page 
+                    for greater visibility. I also redesigned the events section to include 
+                    more imagery and details to give users a better idea of the events at a glance and added a distinct 
+                    register CTA for each event. These changes aim to <b>drive engagement</b> with the library by making it easier 
+                        for visitors to discover and register for events.
+                </p>
+            </div>
+            <div style="padding: 1rem 3rem 0rem 0rem;">
+                <img  src="images/mcls/mcls-events.png">
+            </div>
+        </div>
+
+        <!-- explore -->
+        <div class="highlights" style="display: flex;">
+            <div style="padding: 0 0 0 10rem;">
+                <img  src="images/mcls/mcls-explore.png">
+            </div>
+            <div style="max-width: 30%; padding: 1rem 10rem 0rem 0rem;">
+                <p><b>ℹ️ &nbsp;Lack of contextual information <br>🗑️ &nbsp;Visual clutter & information overload</b></p>
+                <p>The current Resources, Services, and Catalog sections lay out all of the available options 
+                   <b> without providing any context</b> as to what they’re about or how to start using them. Not only does this design 
+                    take up a lot of space, but also it is confusing for users to interact with. 
+                </p>     
+                <p>My redesign groups these similar sections into an <b>"Explore" section</b> for better organization and ease of navigation.
+                    I  <b>reallocated unnecessary clutter</b> in these sections to reduce information overload and
+                    added a <b>brief description</b> of each so users know what they can use them for and CTAs to visit those pages for more details.
+                </p>             
+            </div>
+        </div>
+
+        <!-- staff picks -->
+        <div class="highlights" style="display: flex;">
+            <div style="max-width: 30%; padding: 2rem 4rem 0 10rem;">                
+                <p><b>🗑️ &nbsp;Visual clutter & information overload</b></p>
+                <p>Staff Picks is currently embedded within the Resources section, but it gets lost in all of the visual clutter. I decided to make 
+                    Staff Picks its own section to make it easier for users to discover new reads, especially since it is a common reason for people to visit the site.
+                    I also added the title and author underneath each book. 
+                </p>
+            </div>
+            <div style="padding: 1rem 3rem 0rem 0rem;">
+                <img  src="images/mcls/mcls-staffpicks.png">
+            </div>
+        </div>
+
+        <!-- bulletin -->
+        <div class="highlights" style="display: flex;">
+            <div style="padding: 0 0 0 10rem;">
+                <img  src="images/mcls/mcls-bulletin.png">
+            </div>
+            <div style="max-width: 30%; padding: 1rem 10rem 0rem 0rem;">
+                <p><b>🗂️ &nbsp;Unorganized IA / content strategy</b></p>
+                <p>In the current site, the first three cards under the header aren't organized, clear, or consistent 
+                    in theme or style, and it's not immediately clear whether they are events, resources, or something else entirely. 
+                    To address this issue, I added a "Bulletin" section to <b>create a designated place for notices and community information</b>.
+                    Furthermore, I added a <b>"Submit to Bulletin" CTA</b> that allows users to submit their own notices and resources to the Bulletin in order to
+                    encourage greater community engagement.
+                </p>
+            </div>
+        </div>
+
+
         <!-- Responsive Redesign -->
         <div class="content">
             <h2>Responsive Redesign</h2>
-                <p>Finally, I recreated my high-fidelity prototypes using HTML and CSS to build <a href="https://happycapybara423.github.io/mcls-redesign/mcls.html" style="color: #3DAF96;">
+                <p>Finally, I recreated my high-fidelity prototypes using HTML and CSS to build <a href="https://happycapybara423.github.io/mcls-redesign/mcls.html">
                     Mercer County Library’s redesigned and responsive home page</a>. Given the scope of this project, I used mostly dummy elements to replace navigational elements, 
                     links, and buttons. Moving forward, I hope to incorporate Flexbox and CSS's other layout tools more in my future designs.
                 </p>
         </div>
 
+        <div class="final-designs">
+            <div>
+                <img src="images/mcls/mcls desktop scroll.gif">
+                <p>Desktop</p>
+            </div>
+            
+            <div>
+                <img src="images/mcls/mcls tablet scroll.gif">
+                <p>Tablet</p>
+            </div>
+
+            <div>
+                <img src="images/mcls/mcls mobile scroll.gif">
+                <p>Mobile</p>
+            </div>
+        </div>
+    
+        <!-- Reflection -->
+        <div class="content">
+            <h2>Conclusion and Learnings</h2>
+                <p>Looking back on my childhood, my local library played an integral role in my early education. I took on this project not only because 
+                    I thought their website could be improved, but also because I wanted to find a way to give back to an institution that shaped my formative years.
+                </p>
+                <p>
+                    One of the biggest challenges of this project was designing for responsiveness. Understanding the value of responsiveness in providing a 
+                    more user-friendly experience across all devices as well as the constraints of development made me a lot more intentional 
+                    about the way I approached my designs.
+                </p>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <p><a href="#top">Back to Top</a> 
+                    &nbsp;•&nbsp; 
+                    <a href="index.html">Work</a> 
+                    &nbsp;•&nbsp; 
+                    <a href="about.html">About</a> 
+                    &nbsp;•&nbsp; 
+                    <a href="resume.pdf">Résumé</a>
+                </p>
+            </div>                   
+        </div>
+        
+        <div class="footer">
+            <p style="font-size:0.9rem">Copyright © 2022 Happy.&nbsp; 🖌️ + 👨‍💻 with 🍵 in Providence.</p>
+        </div> 
         
     </body>
    

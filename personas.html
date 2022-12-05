@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="case-study-styles.css">
+    <meta name="description" content="responsive redesign writeup">
+    <link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <div class="topnav">
+            <div>
+                <a style="color:#303030" href="index.html">Jeffrey Tao</a>
+            </div>
+            <div class="right-links">
+                <a href="index.html">Work</a>
+                <a href="about.html">About</a>  
+                <a href="resume.pdf">Résumé</a>
+            </div>
+                    
+        </div>
+
+        <div class="context">
+            <div class="title">
+                <h2 style="margin:0 0 1rem">Investigating the users of a washing machine.</h2>
+                <p>User Research &nbsp;•&nbsp; Personas &nbsp;•&nbsp; Storyboarding</p>
+            </div> 
+            <div class="details">
+                <div class="detail">
+                    <p><b>TIMELINE</b></p>
+                    <p>Sep 2022<br>
+                        2 weeks</p>
+                </div>
+                <div class="detail">
+                    <p><b>ROLE</b></p>
+                    <p>UX Researcher<br>
+                    </p>
+                </div>
+            </div>
+                
+        </div>
+        
+
+        <img class="full-width" src="images/personas/personas-hero.png" alt="personas-hero">  
+        
+        <!-- Context -->
+        <div class="content" id="overview">
+            <h2>Context</h2>
+                <p>The goal of this project was to step into a user’s shoes. I observed 3 real users interacting with my choice of 
+                    a public interface (a Maytag washing machine), interviewed these individuals about their experiences, created 2 
+                    personas based on these users, and illustrated a storyboard for one of my personas.
+                </p><br><br>
+        </div>
+
+        <!-- Selecting an Interface -->
+        <div class="content" id="part2">
+            <h2>Selecting an Interface</h2>
+                <p>I decided to study my dorm's washing machine since I had struggled with using it myself and was curious to 
+                    see how other users interacted with it and hear their thoughts on it. Since the interface is in public view, 
+                    people also wouldn't be uncomfortable with being watched while using it. Below is a sketch of the main interface.
+                </p>
+                    <img src="images/personas/interface-sketch.png" alt="interface-sketch">
+
+                <p><b style="font-size:1.3rem">This interface uses a digital screen to display important information about your wash cycle, and with 
+                    preset fabric settings, it automates certain processes for its users, all of which makes it easier for 
+                    them to wash their clothes.
+                </b></p><br>
+                <p>
+                    Users can select from a variety of fabric settings and view the status of the washing cycle while it’s 
+                    running. On the right, there are 6 buttons indicating the fabric settings from which users can choose, 
+                    and in the middle, there is a digital LED display that shows various details about the washing cycle, 
+                    including temperature, time remaining, the chosen fabric setting, and whether the door is locked. On 
+                    the left, there is also a drawer into which the user can pour detergent.
+                </p>
+                <p>
+                    The top figure depicts the starting state of the screen, which prompts the user to “select cycle.” 
+                    The figure below it depicts the screen after the user selects a fabric setting, which they accomplish by 
+                    pressing one of the buttons. The door is unlocked for a brief period of time at the very beginning of 
+                    the cycle before the chamber is filled with water, after which the door is locked for the remainder of 
+                    the cycle. If the user opens the door before it is locked, the screen says “reselect cycle,” prompting 
+                    the user to select a different fabric setting. 
+                </p>
+                <br>
+        </div>
+
+        <!-- recording observations -->
+        <div class="content" id="part1">
+            <h2>Recording Observations</h2>
+                <p>After selecting the interface, I prepared some interview questions for my users in order to gain insight 
+                    into their expectations, motives, and challenges regarding the interface. But before conducting these 
+                    interviews, I recorded my objective observations about their interactions with the interface, looking 
+                    out for any struggles or difficulties they might encounter while using it.
+                </p><br><br>
+                <p2>KEY OBSERVATIONS</p2><br>
+                <ul class="list">
+                    <li>One user did not separate their laundry while the other two users did</li>
+                    <ul><li>Users who separated their laundry chose different fabric settings for each load</li></ul>
+                    <li>When the users selected the fabric setting, the “door locked” indicator appeared briefly before disappearing</li>
+                    <ul><li>One user opened the door at this time, and “reselect cycle” appeared on the screen. 
+                        When they pressed a different button, the fabric setting displayed on the screen did not change</li></ul>
+                    <li>When users pressed the fabric setting buttons, they did not visibly compress</li>
+                    <li>None of the users used the detergent dispenser; instead they used detergent pods that they threw into the washer</li>
+                    <li>After the washer started running, users set an alarm on their phone for the time remaining on the screen</li>
+                    <ul><li>One user rounded up the time on their alarm to the nearest ten (37 → 40 min.)</li></ul>
+                </ul><br>
+                <p>Observing the users while they used the interface provided some insightful information about the interface's 
+                    mechanisms and its potential issues. It was also interesting to see how some users interacted with it differently 
+                    from others.
+                </p>
+                <br>
+                <p>I was now ready to interview the users. Here's what I asked them:</p><br><br>
+                <p2>INTERVIEW QUESTIONS</p2><br>
+                <ol class="list">
+                    <li>What is going through your mind as you look at this interface?</li>
+                    <li>How does this compare to your expectations?</li>
+                    <li>Is there anything you would change/add/remove?</li>
+                    <li>Were you able to accomplish and find what you were looking for?</li>
+                    <li>If you wanted to change your fabric setting, what would you do?</li>
+                    <li>What, if anything, do you like or dislike about the interface?</li>
+                    <li>What adjectives would you use to describe this interface?</li>
+                </ol><br>
+                <p>After jotting down answers from all three users, I took some time to find patterns in and 
+                    areas of contrast between their thoughts, motivations, and experiences. This helped me 
+                    summarize their responses into a few key points:
+                </p><br>
+                <ul class="list">
+                    <li>Users generally found the interface pretty <b>simple and intuitive to use, though somewhat outdated</b>. 
+                        The screen displayed most of the important details they wanted to know, and it was easy for them 
+                        to see if the machine was occupied or not.
+                    </li>
+                    <li>Two users felt that the interface <b>lacked certain options and functionalities</b> that would allow them to 
+                        select their washing preferences more specifically to meet their needs.
+                    </li>
+                    <li>Users noted that they <b>didn’t fully understand</b> the difference between certain fabric settings 
+                        and <b>wished for more clarity</b> about the temperature of each setting.
+                    </li>
+                    <li>Users either didn’t know how to or were <b>unsuccessful in reselecting their fabric setting</b>.
+                    </li>
+                    <li>Users wished they could <b>start and stop the cycle manually</b> at any point.</li>
+                </ul><br>
+                
+        </div>
+
+        <!-- Crafting the personas -->
+        <div class="content" id="part2">
+            <h2>Crafting the Personas</h2>
+                <p>Based on the overarching trends taken from my observations and interviews, 
+                    I created two different personas, detailing their issues with the interface and things they think, feel say, or do using
+                     a four-quadrant empathy map.
+                </p>
+                <div>
+                    <img class="full-width" src="images/personas/particular-polly-persona.png" alt="particular polly persona">
+                </div>
+                
+                <div>
+                    <img class="full-width" src="images/personas/indifferent-ian-persona.png" alt="indifferent ian persona">
+                </div>
+        </div>
+
+        <!-- storyboarding -->
+        <div class="content" id="part1">
+            <h2>Storyboarding</h2>
+                <p>The last part of this process was storyboarding, in which I mapped out one of my persona's journeys from start to end. 
+                    Though both personas represented valuable user groups, I decided to map out Particular Polly's journey as it seemed 
+                    to account for more of the problem space.
+                </p>
+                <div>
+                    <img class="full-width" src="images/personas/polly-storyboard.png" alt="polly storyboard">
+                </div>
+                
+        </div>
+
+    
+        <!-- Reflection -->
+        <div class="content">
+            <h2>Conclusion and Learnings</h2>
+                <p>
+                    Overall, this process was a super valuable learning experience. Putting yourself in someone else's shoes is tough, but it's totally necessary 
+                    in order to design for your users' needs. These methods were really helpful in identifying pain points in the interface's design as well as 
+                    discovering overarching patterns across users. 
+                </p>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <p><a href="#top">Back to Top</a> 
+                    &nbsp;•&nbsp; 
+                    <a href="index.html">Work</a> 
+                    &nbsp;•&nbsp; 
+                    <a href="about.html">About</a> 
+                    &nbsp;•&nbsp; 
+                    <a href="resume.pdf">Résumé</a>
+                </p>
+            </div>                   
+        </div>
+        
+        <div class="footer">
+            <p style="font-size:0.9rem">Copyright © 2022 Happy.&nbsp; 🖌️ + 👨‍💻 with 🍵 in Providence.</p>
+        </div> 
+        
+    </body>
+   
+</html>
