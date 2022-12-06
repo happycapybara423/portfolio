@@ -1,3 +1,7 @@
+html {
+    scroll-behavior:  smooth;
+}
+
 @font-face {
     font-family: 'Recoleta';
     src: url(fonts/recoleta-regulardemo.otf);
@@ -85,7 +89,7 @@ img {
 }
 
 .tagline {
-    max-width: 76%;
+    max-width: 78%;
 }
 .subtag {
     max-width: 75%;
@@ -123,10 +127,30 @@ img {
     flex-direction: row;
 }
 
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0rem 10rem;
+}
+
+
 .card {
     width: calc(50% - 1rem);
     padding-bottom: 3rem;
 }
+
+.about {
+    width: calc(50%);
+    margin-left: 3rem;
+}
+
+.about p, a {
+    font-size: 1.1rem;
+}
+
+
 
 .card-image {
     border-radius: 10px;
@@ -141,3 +165,31 @@ img {
 .card-desc {
     padding-top: 10px;
 }
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 10rem 1rem 10rem;
+}
+
+.footer-links a {
+    color: #303030;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+.footer-links a:hover {
+    background-color: #e7e7e7;
+    transform: translateY(-5px);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 0rem 10rem 3rem 10rem;
+}
+
