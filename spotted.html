@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Responsive Redesign</title>
+    <title>Spotted</title>
     <link rel="stylesheet" href="case-study-styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <meta name="description" content="MCLS case study">
+    <meta name="description" content="Spotted case study">
     <link href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a616d3413.js" crossorigin="anonymous"></script>
 </head>
 
     <body>
+
         <div class="topnav">
             <div>
-                <a style="color:#303030" href="index.html">Jeffrey Tao</a>
+                <a style="color:#303030" href="index.html">Happy Capybara</a>
             </div>
             <div class="right-links">
                 <a href="index.html">Work</a>
@@ -23,23 +23,354 @@
                     
         </div>
 
+        <div class="context animated">
+            <div class="title">
+                <h2 style="margin:0 0 1rem">Spotted: Making it easy for students to discover and explore new places around campus.</h2>
+                <p>Product Design &nbsp;•&nbsp; Prototyping &nbsp;•&nbsp; Mobile</p>
+            </div> 
+            <div class="details">
+                <div class="detail">
+                    <p><b>TIMELINE</b></p>
+                    <p>Spring 2021<br></p>
+                    <p>12 weeks<br></p>
 
-        <div class="footer-links">
-            <div>
-                <p><a href="#top">Back to Top</a> 
-                    &nbsp;•&nbsp; 
-                    <a href="index.html">Work</a> 
-                    &nbsp;•&nbsp; 
-                    <a href="about.html">About</a> 
-                    &nbsp;•&nbsp; 
-                    <a href="resume.pdf">Résumé</a>
-                </p>
-            </div>                   
+                </div>
+                <div class="detail">
+                    <p><b>ROLE</b></p>
+                    <p>Product Designer<br>
+                    </p>
+                    <p>User Researcher<br>
+                    </p>
+                </div>
+                <div class="detail">
+                    <p><b>TEAM</b></p>
+                    <p>Jealous Jaguar<br>
+                    </p>
+                    <p>Raging Rabbit<br>
+                    </p>
+                    <p>Proud Panda<br>
+                    </p>
+                </div>
+            </div>
+                
+        </div>
+
+        <img class="full-width" src="images/spotted/spotted-hero.png" alt="spotted-hero">
+
+        <!-- Overview -->
+        <div class="content" id="overview">
+            <h2 class="pb-3">Context</h2>
+            <p>Spotted is a project I completed as a part of the cohort program
+                for Brown RISD Innovation Community. Spotted was an app that our project lead had previously 
+                created in one of her classes, and the app's purpose was to help users find spots to explore 
+                near them by interest, activity, distance, and more. We set out to rework the app's mission and 
+                redesign the experience from scratch.
+            </p>
+        </div>
+
+        <div class="content" id="part1">
+            <h2 class="pb-3">Research</h2>
+            <p2 class="pb-2">ORIGINAL PROBLEM STATEMENT</p2>
+            <p><br>To narrow down a target audience, we decided to redesign the product to appeal to 
+            college students. At the beginning of this study, our hypothesis was:</p><br>
+
+            <div class="container" style="display: flex;">
+                <div style="padding: 0px 20px 0px 20px;">
+                    <p style="font-size: 1.8rem;">College students want to find places to <span style="text-decoration: underline;">create meaningful experiences</span> with friends and others, 
+                        but they can't because <span style="text-decoration: underline;">they don't know where to go</span>.
+                    </p>
+                </div>
+            </div><br><br>
+
+            
+            <p2 class="pb-2">USER SURVEYS</p2>
+            <p><br>Through surveys, we asked a random pool of 100+ college age students to answer questions about how well they know their city,
+                  what they rely on to find new places to explore, and their experiences with using those methods.
+            </p>
+            <br>
+
+            <img class="full-width" src="images/spotted/spotted-surveys.png" alt="surveys">
+
+           <br><br>
+
+            <p2 class = "pt-3 pb-4">SURVEY INSIGHTS</p2>
+            <p><br>After analyzing our survey results, we discovered two key insights.
+           </p>
+           <br>
+                
+                <div class="container" style="display: flex;">
+                    <div style="padding: 0px 20px 0px 20px;">
+                        <p style="font-size: 1.5rem;">👁️ Many users felt seeing visuals online increased their chances of exploring 
+                            that place.
+                        </p><br>
+                        <p style="font-size: 1.5rem;">🤝 Reviews on rating apps are insignificant and less trustworthy for college 
+                            students. People would prefer reviews from personal friends and people of the same age demographic.
+                        </p>
+                    </div>
+                </div>
+            
+            <br><br>
+
+
+            <p2 class="pb-2">REWORKED PROBLEM STATEMENT</p2>
+            <p><br>Using this new information, we reworked our problem statement to more accurately reflect 
+            our user research and refine the focus of our product.</p><br>
+
+            <div class="container" style="display: flex;">
+                <div style="padding: 0px 20px 0px 20px;">
+                    <p style="font-size: 1.5rem;">College students find exploring their college cities to be important because 
+                        it is <span style="text-decoration: underline;">designated time in their life to explore new places</span>. In addition, many students like to explore 
+                        new places with friends to give them an <span style="text-decoration: underline;">incentive to spend more time together</span> and socially engage with 
+                        one another.
+                    </p><br>
+                    <p style="font-size: 1.5rem;">Furthermore, people want to find new places to explore, but it's difficult because they <span style="text-decoration: underline;">heavily rely on 
+                        recommendations by people they know</span> rather than strangers online.
+                    </p>
+                </div>
+            </div><br><br>
+
+            <!-- <p><b>Key Design Decisions</b></p>
+            <ul class="list">
+                <li>Chat is more like a “feed” than a typical chat format with messages back
+                    and forth</li>
+                <li>User can take multiple photos at once before sending</li>
+                <li>Users can preview and select the photos they’ve taken before sending them</li>
+                <li>Users are not able to upload photos from their camera roll to foster
+                    spontaneity and capturing/sharing photos “in the moment”</li>
+                <li>Home page gives users opportunities to explore with recent activity and highlights</li>
+                <li>Profile page allows users to see photo history and other personal information</li>
+            </ul> -->
+        </div>
+
+            <!-- ideation -->
+
+        <div class="content" id="part2">
+            <h2 class="pb-3">Ideation</h2>
+
+            <p2 class = "pt-3 pb-4">FEATURE BRAINSTORMING</p2><br><br>   
+            <p class = "pb-5">Next, our group did Crazy Eights to brainstorm possible solutions and then voted on and 
+                mapped out our favorite features on an impact-feasibility matrix to determine which ones we would 
+                focus on implementing into the product.
+            </p>
+
+            <img class="full-width" src="images/spotted/spotted-brainstorming.png" alt="surveys">
+            <br>
+
+            <p2 class = "pt-3 pb-4">POTENTIAL OPPORTUNITIES</p2><br><br>
+            <p class = "pb-5">From our matrix, we crafted 
+                three "How might we" statements to reframe our insights into actionable opportunity areas.
+            </p>
+            <div class="container" >
+                <div style=" padding: 0px 20px 0px 20px;">
+                    <p style="font-size: 1.5rem"><span style="font-weight: 700; color:#303030">Personalization:</span> How might we be able to show reviews that are relevant to the user's demographics and interests?
+                    </p><br>
+                </div>
+                <div style=" padding: 0px 20px 0px 20px;">
+                    <p style="font-size: 1.5rem"><span style="font-weight: 700; color:#303030">Qualitative Reviews:</span> How might we create a review system where users are able to learn more than a star rating?
+                    </p><br>
+                </div>
+                <div style="padding: 0px 20px 30px 20px;">
+                    <p style="font-size: 1.5rem"><span style="font-weight: 700; color:#303030">Visual Engagement:</span> How might we create a visually-engaging platform that entices people to explore new spots?
+                    </p>
+                </div>
+            </div>
+            
+            <p2 class = "pt-3 pb-4">COMPETITIVE ANALYSIS</p2><br><br>
+            <p class = "pb-5">We also did some research on existing apps that address different features that we wanted to incorporate into our product. 
+                We looked at Airbnb and Yelp for inspiration for our review format, Google Maps for our map and 
+                search function, and Pinterest for its visual emphasis and use of boards.
+            </p>
+
+            <div class="container" style="display: flex; margin-bottom:2rem;">
+                <div style="width: 25%; padding: 0px 20px 0 20px;">
+                    <img class="image" src="images/spotted/airbnb.png" alt="Final Prototype Part 1">
+                    <div style="text-align:center;">
+                        <p ><b>Airbnb</b></p>
+                        <p>Review Format</p>
+                    </div>
+                </div>
+                <div style="width: 25%; padding: 0px 20px 0 20px;">
+                    <img class="image" src="images/spotted/yelp.png" alt="Final Prototype Part 2">
+                    <div style="text-align:center;">
+                        <p ><b>Yelp</b></p>
+                        <p>Review Format</p>
+                    </div>
+                </div>
+                <div style="width: 25%; padding: 0px 20px 0 20px;">
+                    <img class="image" src="images/spotted/gmaps.png" alt="Final Prototype Part 3">
+                    <div style="text-align:center;">
+                        <p ><b>Google Maps</b></p>
+                        <p>Map + Search Function</p>
+                    </div>
+                </div>
+                <div style="width: 25%; padding: 0px 20px 0 20px;">
+                    <img class="image" src="images/spotted/pinterest.png" alt="Final Prototype Part 4">
+                    <div style="text-align:center;">
+                        <p ><b>Pinterest</b></p>
+                        <p>Visuals + Use of Boards</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content" id="part1">
+            <h2 class="pb-3">Sketching & Wireframing</h2>
+   
+            <p2 class="pb-2">SKETCHING</p2>
+            <p><br>We then began to start drafting some low fidelity wireframes. Each one of our team members 
+                focused on a separate feature to wireframe. I was tasked to wireframe some of the profile page 
+                user flows. 
+            </p>
+            <br>
+
+            <img class="full-width" src="images/spotted/spotted-lofi.png" alt="First sketch">
+
+
+            <p2 class="pb-3">COMBINING IDEAS INTO WIREFRAME</p2>
+            <p><br>After sketching, we regrouped and discussed whether our sketches
+                were effective at solving the problem.
+                We then combined our ideas into a single wireframe that we created in Figma. 
+                Some of the user experiences we explored were redesigns of the homepage, navigation bar, search function, and review system.
+            </p>
+            
+            <img style="margin: 2rem 0rem; border-radius:10px;" src="images/spotted/spotted-midfi.png">
+
+            <br>
+            <p2>VISUAL DESIGN STYLE GUIDE</p2>
+            <br><br>
+                    <p>We also created a visual design style guide that documents the main colors and typography to keep our designs 
+                        consistent and establish a visual identity as we moved on to the high-fidelity wireframes. We decided to go for a 
+                        clean, minimalist look with just one accent color since the app is very image-heavy.
+                    </p>
+                    <img src="images/spotted/spotted-style-guide.png" alt="visual-design-style-guide">
+
         </div>
         
-        <div class="footer">
-            <p style="font-size:0.9rem">Copyright © 2022 Jeffrey Tao.&nbsp; 🖌️ + 👨‍💻 with 🍵 in Providence.</p>
-        </div> 
+        <div class="content" id="part2">
+            <h2>Design Decisions</h2>
+            <p style="font-weight:500; color:#303030; font-size: 1.3rem;">There were a few key design decisions that we made in this process.</p>
+            <br><p2>REDESIGNING HOME</p2><br>
+            <br>
+            <p>Although we focused our project on creating a personalized review system, we wanted to clean up the 
+                user experience from the home page.
+            </p>
+            <p>One significant change we decided on was <b>removing the search button from the navigation bar</b>. We thought this 
+                was redundant and unnecessary because there was already a permanent search bar at the top of the screen. Also,
+                we <b>added the distance under each spot</b>, which improves efficiency because the user doesn't have 
+                to tap each spot to see how far they are. We also <b>darkened the text at the top</b> so it is more accessible for visually-impaired 
+                users. 
+            </p>
+            <img style="margin:2rem 0;" src="images/spotted/spotted-home-redesign.png">
+
+            <p2>UPLOADING CONTENT</p2><br>
+            <br>
+            <p>Due to the nature of Spotted being a photo-heavy app, we wanted to give users the ability to <b>upload photos without having to leave a review</b>.
+                We decided to go with a <b>toggle button</b> instead of sticky button because it reflected the need of being <b>easy and quick to access</b>.                
+            </p>
+            <img style="margin:2rem 0;" src="images/spotted/spotted-uploading-content.png">
+
+            <p2>QUALITY REVIEWS</p2><br>
+            <br>
+            <p>We also spent a lot of time trying to create a review system that was user-friendly but also informative. We chose Option 1 
+                because it was <b>less cluttered and more inline with the app’s overall design aesthetics</b>. Furthermore, Option 2 had redundant 
+                information, and had disorganized information hierarchy from the first page to the third.
+            </p>
+            <img style="margin:2rem 0;" src="images/spotted/spotted-quality-reviews.png">
+
+            <p2>SEARCH</p2><br>
+            <br>
+            <p>Because our research showed us that users rely heavily on recommendations from peers, we wanted to make Spotted <b>a social platform</b>. 
+                So with this in mind, we created a <b>new way to search different categories</b>, which include: top or popular spots and accounts, spots, 
+                and accounts. The user has the power to <b>filter their search suggestions</b>. This decision is reflected in Option 2.
+            </p>
+            <img style="margin:2rem 0;" src="images/spotted/spotted-search.png">
+
+        </div>
+
+        
+        </div>
+
+            <!-- Final Designs -->
+            <div class="content">
+                <h2 class = "pb-3">Final Designs</h2>
+                
+                <p>Finally, we translated our low-fidelity wireframes into high-fidelity prototypes in Figma using the colors,
+                    typography, and components from our style guide. Here are the main highlights of the final design:
+                </p>
+
+                <br><p2>HOME: USER-INTUITIVE NAVIGATION</p2><br>
+                <br>
+                <p>On the home page, users can view spots that are closest to them and they can search for both accounts and 
+                    different types of places using the search bar, from the home page. 
+                </p>
+                <img style="border-radius:10px; margin:2rem 0;" src="images/spotted/spotted-final-home.png">
+
+                <p2>SEARCH + MAP</p2><br>
+                <br>
+                <p>Users can also use the top search bar to find spots and filter them by availability, distance, and more. 
+                    The map function of the app (found in the bottom navigation) allows users to be able to visually see what 
+                    spots are around them and how far or close they are to each spot.
+                </p>
+                <img style="border-radius:10px; margin:2rem 0;" src="images/spotted/spotted-final-search.png">
+
+                <p2>PERSONALIZED REVIEWS</p2><br>
+                <br>
+                <p>Users can also filter reviews so that they only see reviews from people they are following. Assuming that 
+                    users will follow their friends and maybe influencers, by being able to filter reviews, they can get reviews 
+                    from people they trust and find the hottest spots that their friends are raving about. Users can also see the 
+                    value, service, and taste very quickly through a bar visual and images taken by other users.
+                </p>
+                <img style="border-radius:10px; margin:2rem 0;" src="images/spotted/spotted-final-reviews.png">
+
+                <p2>REVIEW SYSTEM</p2><br>
+                <br>
+                <p>our review system was something that we focused a lot on. Through our design, users can quickly and easily 
+                    provide quantitative metrics through star ratings and yes/no questions and add qualitative reviews through 
+                    tags and writing. This allows for a more holistic, trustworthy, and transparent review system.
+                </p>
+                <img style="border-radius:10px; margin:2rem 0;" src="images/spotted/spotted-final-review-system.png">
+
+                <p2>PROFILE</p2><br>
+                <br>
+                <p>We also gave users the ability to save spots and create boards, which essentially group spots into little folders. 
+                    We thought this would be helpful to help plan dates or trips with friends or just keep track of favorite spots. 
+                    Also, reviews that users have posted are displayed on their profile, so their followers can see where they’ve 
+                    been and how they enjoyed those spots.
+                </p>
+                <img style="border-radius:10px; margin:2rem 0;" src="images/spotted/spotted-final-profile.png">
+
+
+            </div>
+
+            <div class="content" id="conclusion">
+                <h2 class = "pb-3">Conclusion & Learnings</h2>
+                <p>This was the first time I was involved in designing an app idea. I learned a lot about the UI/UX design process and how to work collaboratively 
+                    with other designers, and I gained experience working with design tools like Figma. If I had more time,
+                    I would conduct more research and usability testing throughout the design process and on final designs. I'd also like to 
+                    explore and enhance the social capability of the app by finding ways to incentivize posting reviews and pictures of spots. 
+                    I also think the app leans toward being too restaurant-heavy, such that it’s sort of too much like Yelp. 
+                    In the future, I’d like to think of ways to redefine the app’s features and mission to focus on exploring 
+                    new places with friends.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <p><a href="#top">Back to Top</a> 
+                        &nbsp;•&nbsp; 
+                        <a href="index.html">Work</a> 
+                        &nbsp;•&nbsp; 
+                        <a href="about.html">About</a> 
+                        &nbsp;•&nbsp; 
+                        <a href="resume.pdf">Résumé</a>
+                    </p>
+                </div>                   
+            </div>
+            
+            <div class="footer">
+                <p style="font-size:0.9rem">Copyright © 2022 Happy Capybara.&nbsp; 🖌️ + 👨‍💻 with 🍵 in Providence.</p>
+            </div> 
     </body>
 
 </html>
